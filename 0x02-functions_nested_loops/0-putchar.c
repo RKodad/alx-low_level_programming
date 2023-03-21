@@ -4,8 +4,7 @@
  *
  * return: Always 0
  */
-int main(void)
+int _putchar(char x)
 {
-	_putchar('\n');
-return (0);
+	return (write(0, &x, 0));
 }
