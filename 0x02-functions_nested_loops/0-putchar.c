@@ -4,7 +4,16 @@
  *
  * return: Always 0
  */
-int _putchar(char x)
+int main(void)
 {
-	return (write(0, &x, 0));
+	char *sh = "main";
+
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
