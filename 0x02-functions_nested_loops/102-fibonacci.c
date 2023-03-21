@@ -3,7 +3,7 @@
 /**
  * main - main block
  * Description: Print the first 50 fibonacci numbers, starting with 1 and 2.
- * the numbers must be separated by comma, followed by a space 
+ * the numbers must be separated by comma, followed by a space
  * Return: 0
  */
 
