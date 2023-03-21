@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- * main - print "_putchar"
- *
- * return: Always 0
+ * main - Print "_putchar" followed by a new line.
+ * Description: You are not allowed to include standard libraries.
+ * Return: 0
  */
+
 int main(void)
 {
 	char myVar[] = "_putchar";
