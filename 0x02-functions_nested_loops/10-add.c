@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int add - adds two integers and returns the result
+ * add - adds two integers and returns the result
  * @x: int type number
  * @y: int type number
  * Return: result of addition
