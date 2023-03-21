@@ -2,7 +2,7 @@
 /**
  * print_sign -  prints the sign of a number.
  * @n: type int character
- * return: 1 if a number greater than zero, -1 if a number less than zero or 0 if a number is zero
+ * return: 1 if +, -1 if - or 0 if 0
  */
 int print_sign(int n)
 {
@@ -17,7 +17,7 @@ int print_sign(int n)
 		return (-1);
 	}
 	else
-	{	
+	{
 		_putchar('0');
 		return (0);
 	}
