@@ -6,12 +6,13 @@
  */
 int main(void)
 {
-	char *sh = "main";
+	char myVar[] = "_putchar";
+	int i = 0;
 
-	while (*sh)
+	while (myVar[i] != '\0')
 	{
-		_putchar(*sh);
-		sh++;
+		_putchar(myVar[i]);
+		i++;
 	}
 	_putchar('\n');
 
