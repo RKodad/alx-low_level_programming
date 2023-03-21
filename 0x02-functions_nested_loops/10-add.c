@@ -5,11 +5,5 @@
 
 int add(int x, int y)
 {
-	int r
-
-	for (r = x + y)
-	{
-		return (r);
-	}
-
+	return (x + y);
 }
