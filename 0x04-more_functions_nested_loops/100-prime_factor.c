@@ -17,7 +17,7 @@ int main(void)
 	{
 		if (n % d == 0)
 		{
-			printf("%d is the largest prime factor !", d,'\n');
+			printf("%d\n", d);
 			break;
 		}
 	}
