@@ -11,14 +11,13 @@
 int main(void)
 {
 	int d;
-	long int n; 
-	n = 612852475143;
+	long n = 612852475143;
 
 	for (d = (int) sqrt(n); d > 2; d++)
 	{
 		if (n % d == 0)
 		{
-			printf("%d is the largest prime factor !", d);
+			printf("%d is the largest prime factor !", d,'\n');
 			break;
 		}
 	}
