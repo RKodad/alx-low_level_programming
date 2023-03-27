@@ -4,16 +4,16 @@
 
 int main(void)
 {
-	int rand;
+	int a;
 	int count;
 	int sum;
 
 	srand(time(NULL));
 	for (count = 0, sum = 2772; sum > 122; count++)
 	{
-		rand = (rand() % 125) + 1;
-		printf("%c", rand);
-		sum -= rand;
+		a = (rand() % 125) + 1;
+		printf("%c", a);
+		sum -= a;
 	}
 	printf("%c", sum);
 
