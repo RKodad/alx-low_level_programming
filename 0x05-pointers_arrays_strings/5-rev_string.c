@@ -7,8 +7,24 @@
 
 void rev_string(char *s)
 {
-	int n = str.length();
+	char tmp;
+	int i, j, len;
 
-	for (int i = 0; i < n / 2; i++)
-		swap(str[i], str[n - i - 1]);
+	j = 0;
+	len = 0;
+
+	while (s[j] != '\0')
+	{
+		j++;
+	}
+
+	len = j - 1;
+
+	for (i = 0; i < len / 2; i++)
+	{
+		tmp = s[i];
+		s[i] = s[len];
+		s[len--] = tmp;
+	}
 }
+
