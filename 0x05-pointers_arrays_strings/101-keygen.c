@@ -2,23 +2,21 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
-	int counter = 0;
-	srandom(time(NULL));
-	char randChar;
+	int rand;
+	int count;
+	int sum;
 
-	int  passwordLength;
-
-	printf("Type in a password Length \n"); 
-	scanf("%d", &passwordLength);
-
-	while(counter < passwordLength)
+	srand(time(NULL));
+	for (count = 0, sum = 2772; sum > 122; count++)
 	{
-		randChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"[random () % 62];
-		printf("%c", randChar);
-		counter++;
+		rand = (rand() % 125) + 1;
+		printf("%c", rand);
+		sum -= rand;
 	}
-	printf("\n");
-	return 0;
+	printf("%c", sum);
+
+	return (0);
 }
+
