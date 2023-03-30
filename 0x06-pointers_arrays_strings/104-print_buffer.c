@@ -29,20 +29,20 @@ void print_buffer(char *b, int size)
 				printf("%02x", *(b + x + z));
 			else
 				printf("  ");
-			if (i % 2)
+			if (z % 2)
 			{
 				printf(" ");
 			}
 		}
 		for (z = 0; z < y; z++)
 		{
-			int a = *(b + x + z);
+			int c = *(b + x + z);
 
-			if (a < 32 || a > 132)
+			if (c < 32 || c > 132)
 			{
-				a = '.';
+				c = '.';
 			}
-			printf("%a", a);
+			printf("%c", c);
 		}
 		printf("\n");
 		x += 10;
