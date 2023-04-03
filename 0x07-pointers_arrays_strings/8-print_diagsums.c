@@ -8,12 +8,12 @@
 
 void print_diagsums(int *a, int size)
 {
-	int b, sum, s;
+	int b, sum, sizer;
 
 	b = 0;
 	sum = 0;
-	s = size * size;
-	while (b < s)
+	sizer = size * size;
+	while (b < sizer)
 	{
 		if (b % (size + 1) == 0)
 			sum += a[b];
@@ -23,9 +23,9 @@ void print_diagsums(int *a, int size)
 
 	sum = 0;
 	b = 0;
-	while (b < s)
+	while (b < sizer)
 	{
-		if (b % (size - 1) == 0 && b != (s - 1) && b != 0)
+		if (b % (size - 1) == 0 && b != (sizer - 1) && b != 0)
 			sum += a[b];
 		b++;
 	}
